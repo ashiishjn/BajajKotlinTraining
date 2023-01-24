@@ -1,1 +1,0 @@
-# Bajaj Kotlin Training
