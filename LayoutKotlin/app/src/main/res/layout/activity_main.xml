@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayoutActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/LinearButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Linear Layout"/>
+
+    <Button
+        android:id="@+id/RelativeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relative Layout"/>
+
+    <Button
+        android:id="@+id/GridButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grid Layout"/>
+
+
+</LinearLayout>
