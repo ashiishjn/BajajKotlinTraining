@@ -9,7 +9,6 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 
-
 class View(context: Context, val resource : Int, items : List<FlowerClass>)
     : ArrayAdapter<FlowerClass>(context, resource, items) {
 

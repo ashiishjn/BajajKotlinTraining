@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidFragmentPizza</string>
+    <string name="frame_one">Frame One</string>
+    <string name="frame_two">Frame Two</string>
+</resources>
