@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.androidfragmentpizza.R
 import com.example.androidfragmentpizza.data.Pizza
 
-class PizzaDetailFragment : Fragment() {
+class PizzaDetailFragment : Fragment()  {
 
     var position : Int = 0
 
@@ -33,7 +33,7 @@ class PizzaDetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-        Toast.makeText(view.context, position.toString(), Toast.LENGTH_SHORT).show()
+//        Toast.makeText(view.context, position.toString(), Toast.LENGTH_SHORT).show()
 
         view.findViewById<TextView>(R.id.item_name).text = Pizza().pizza_name[position]
 

@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity(), PizzaMenuFragment.OnItemSelectedListen
 
         if(savedInstanceState == null) {
             val pizzaMenuFragment  : PizzaMenuFragment = PizzaMenuFragment()
-
             val fragmentTransaction : FragmentTransaction =supportFragmentManager.beginTransaction()
             fragmentTransaction.add(R.id.frame_one, pizzaMenuFragment)
             fragmentTransaction.commit()
@@ -46,7 +45,7 @@ class MainActivity : AppCompatActivity(), PizzaMenuFragment.OnItemSelectedListen
         if ( resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
             val fragmentTransaction : FragmentTransaction =supportFragmentManager.beginTransaction()
             fragmentTransaction.replace(R.id.frame_two, pizzaDetailFragment)
-            fragmentTransaction.addToBackStack(null)
+//            fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
         }
         else {

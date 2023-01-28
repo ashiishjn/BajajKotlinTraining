@@ -40,11 +40,13 @@ class PizzaMenuFragment : Fragment() {
         }
     }
 
+//    var a : OnItemSelectedListener
     private lateinit var listener : OnItemSelectedListener
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        if (context is com.example.androidfragmentpizza.fragments.PizzaMenuFragment.OnItemSelectedListener) {      // context instanceof YourActivity
+        if (context is com.example.androidfragmentpizza.
+                fragments.PizzaMenuFragment.OnItemSelectedListener) {
             listener =
                 context as OnItemSelectedListener // = (YourActivity) context
         } else {
@@ -54,12 +56,6 @@ class PizzaMenuFragment : Fragment() {
             )
         }
     }
-
-//    override fun onAttach(context: Context) {
-//        super.onAttach(context)
-//        if(context == OnItemSelectedListener)
-//    }
-
 
     interface OnItemSelectedListener {
         fun onPizzaItemSelected(position: Int)
